@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> PÁGINA DE CADASTRO  </title>
+    <link rel="stylesheet" type="text/css" href ="cadastro.css"
+    <link rel="shortcut icon" href="https://yt3.ggpht.com/a/AATXAJwAorETtZdw8xyNDmi2bo4bAqSXViS8qwrmCg=s900-c-k-c0xffffffff-no-rj-mo">
+</head>
+<body>
+<div id="topo">
+    <h1>FORMULÁRIO PARA CADASTRO DE DADOS PESSOAIS</h1> 
+</div>
+<div id="form">
+    <form method="post" name="formulario" action="dadoscadastrais">
+        <fieldset>
+        <legend>DADOS PESSOAIS</legend>
+        <div id="nome"><label>NOME COMPLETO:</label>
+        <input type="text" name="digite seu nome completo" size="30" required="required"> <br> <br>
+        </div>
+        <div id="email"><label>E-MAIL: </label>
+        <input type="email" name="digite seu e-mail" size="30" required="required"> <br> <br>
+        </div>
+        <div id ="dtnas"><label>DATA DE NASCIMENTO: </label>
+        <input type="date" name="data de nascimento">
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <legend>DADOS DE ENDEREÇO</legend>
+        <div id="tipoendereço"><label>SELECIONE O TIPO DA SUA RESIDÊNCIA:</label>
+        <input type="radio" id="endereço_casa" name="endereço" value="CASA">
+        <label for="endereço_casa">CASA</label>
+        <input type="radio" id="endereço_apartamento" name="endereço" value="APARTAMENTO"> 
+        <label for="endereço_apartamento">APARTAMENTO</label> <br> <br>
+        </div>
+        <div id="endereço"><label>ENDEREÇO:</label>
+        <input type ="text" name="digite seu endereço" size="30" required="required"> <br> <br>
+        </div>
+        </fieldset> <br> 
+        <div id ="botaoconfirma">
+        <button style="background-color:green" type="submit">ENVIAR OS DADOS</button> <br> <br>
+        </div>
+        <div id="botaolimpar">
+        <button style="background-color: red"reset">LIMPAR OS CAMPOS</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
